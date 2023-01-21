@@ -41,7 +41,7 @@ function getMonth(event) {
       getSeason(con);
     }
   }
-  /* ===== Conseguir días =====*/
+
   var currentDays = 0;
 
   if (con == 1) {
@@ -51,7 +51,7 @@ function getMonth(event) {
   } else {
     currentDays = 31;
   }
-  /* ===== Crear mes =====*/
+
   for (var i = 1; i <= currentDays; i++) {
     var newDay = document.createElement('div');
     newDay.classList.add('day');
